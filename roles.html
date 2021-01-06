@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles - News-HubHot</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <h2><img src="assets/images/A LOGO.png" alt="" ><span>LPHA</span></h2> 
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class='sidebar-title'>Main Menu</li>
+            <li class="sidebar-item">
+                <a href="index.html" class='sidebar-link'>
+                    <i data-feather="home" width="20"></i> 
+                    <span>Dashboard</span>
+                </a>
+            </li> 
+
+            <li class="sidebar-item">
+                <a href="createpost.html" class='sidebar-link'>
+                    <i data-feather="plus" width="20"></i> 
+                    <span>Create Post</span>
+                </a>
+            </li>
+            
+            <li class="sidebar-item active">
+                <a href="roles.html" class='sidebar-link'>
+                    <i data-feather="book" width="20"></i> 
+                    <span>Roles</span>
+                </a>
+            </li>
+            
+            <li class="sidebar-item  has-sub">
+                <a href="#" class='sidebar-link'>
+                    <i data-feather="user" width="20"></i> 
+                    <span>Authentication</span>
+                </a>
+                <ul class="submenu ">
+                    <li><a href="adduser.html">Add User</a></li>
+                    <li><a href="auth-forgot-password.html">Forgot Password</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar-item">
+                <a href="auth-login.html" class='sidebar-link'>
+                    <i data-feather="log-out" width="20"></i> 
+                    <span>Sign Out</span>
+                </a>
+            </li>                     
+        </ul>
+    </div>
+</div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-header navbar-expand navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center navbar-light ml-auto">
+                        <li class="dropdown nav-icon">
+                            <a href="#" data-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="d-lg-inline-block">
+                                    <i data-feather="mail"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-large">
+                                <h6 class='py-2 px-4'>Notifications</h6>
+                                <ul class="list-group rounded-none">
+                                    <li class="list-group-item border-0 align-items-start">
+                                        <div class="avatar bg-success mr-3">
+                                            <span class="avatar-content"><i data-feather="arrow-right"></i></span>
+                                        </div>
+                                        <div>
+                                            <h6 class='text-bold'></h6>
+                                            <p class='text-xs'>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo dolore corporis temporibus nihil aperiam delectus ipsa maxime ipsam similique.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="avatar mr-1">
+                                    <img src="assets/images/avatar/23854437-42cd-4921-8eb1-32efd6872f56.jpg" alt="" srcset="">
+                                </div>
+                                <div class="d-none d-md-block d-lg-inline-block">Hi, Oluwaseun</div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="auth-login.html"><i data-feather="log-out"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+<div class="main-content container-fluid">
+    <section class="section">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header text-bold text-center">Roles</h3>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                        <div class="table-responsive">
+                            <table class='table table-bordered mb-0' id="table1">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th class="p-1">S/N</th>
+                                        <th>Username</th>
+                                        <th>Roles</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead> 
+                                <tbody class="text-center">
+                                    <tr>
+                                        <td class="p-1">1.</td>
+                                        <td>Oshindeinde Oluwaseun</td>
+                                        <td>Admin</td>
+                                        <td>
+                                          <span class="mr-3"><a href="#">Edit</a></span>
+                                          <span><a href="#" class="color-danger">Delete</a></span>
+                                        </td>                                        
+                                    </tr>
+                                    <tr>
+                                      <td class="p-1">2.</td>
+                                      <td>John Doe</td>
+                                      <td>Editor</td>
+                                      <td>
+                                        <span class="mr-3"><a href="#">Edit</a></span>
+                                        <span><a href="#" class="color-danger">Delete</a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="p-1">2.</td>
+                                      <td>Elizabeth Reynold</td>
+                                      <td>Analyst</td>
+                                      <td>
+                                        <span class="mr-3"><a href="#">Edit</a></span>
+                                        <span><a href="#" class="color-danger">Delete</a></span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="p-1">3.</td>
+                                      <td>Jack Owen</td>
+                                      <td>Moderator</td>
+                                      <td>
+                                        <span class="mr-3"><a href="#">Edit</a></span>
+                                        <span><a href="#" class="color-danger">Delete</a></span>
+                                      </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer clearfix mb-0 text-muted">
+      <div class="float-left">
+        <p>2020 &copy; ALPHA</p>
+      </div>
+      <div class="float-right">
+       <p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="#">Alptem Technologies</a></p>
+      </div>
+    </div>
+  </footer>
+        </div>
+    </div>
+    <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <script src="assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
